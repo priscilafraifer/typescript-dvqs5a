@@ -1,4 +1,5 @@
 // Import stylesheets
+
 import { Greeter } from './greeter';
 import './style.css';
 
@@ -97,7 +98,7 @@ let intevalId = setInterval(() => {
 
 //Utilizando classe externa
 
-let saudacao = new Greeter();
+let saudacao = new Greeter("Mundo");
 
 let title: string = "Olá, mundo!";
 let paragraph: string = "BlaBlaBla";
