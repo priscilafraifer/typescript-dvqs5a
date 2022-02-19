@@ -72,6 +72,12 @@ function soma(n1: number, n2: number): number{
 console.log(soma(21, 21));
 console.log(soma(1, 2));
 
+function getFullName(pessoa: {name: string, lastname: string}): string{
+  return pessoa.name + " " + pessoa.lastname;
+}
+let p = {name: "Ricardo", lastname: "Larguesa"};
+console.log(getFullName(p));
+
 let counter = 0;
 let intevalId = setInterval(() =>{
   counter += 1;
