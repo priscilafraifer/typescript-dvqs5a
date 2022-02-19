@@ -103,7 +103,8 @@ appDiv.innerHTML = `
 <h1>${title}</h1>
 <p>${paragraph}</h1>
 <div id ='counterDiv'></div>
-
+<hr>
+<button id='appButton' onclick="alertTsMethod()">Alertar</button>
 `;
 
 //Declarando uma função para ser invocada por um evento
