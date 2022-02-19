@@ -59,6 +59,19 @@ let notSure: any = 42;
 notSure = "Maybe a string instead";
 notSure = false; //definitivamente, é booleano
 
+//Declarando Void
+function aviso(): void{
+  console.log("Mensagem de alerta");
+}
+aviso();
+
+//Declarando funções
+function soma(n1: number, n2: number): number{
+ return n1+n2;
+}
+console.log(soma(21, 21));
+console.log(soma(1, 2));
+
 let counter = 0;
 let intevalId = setInterval(() =>{
   counter += 1;
