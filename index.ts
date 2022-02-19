@@ -35,7 +35,11 @@ if (myVar1 % 2 == 0){
   console.log(myVar1 + " é IMPAR");
 }
 
-//Utilizando laços e con
+//Utilizando laços e condicionais
+for(let i=1;i<=10; i++){
+  if (i % 2 == 0){
+    console.log(i);
+}
 
 
   
