@@ -55,7 +55,9 @@ let c2: ColorWithReferences = ColorWithReferences.Green;
 
 //Declarando any
 
-
+let notSure: any = 42;
+notSure = "Maybe a string instead";
+notSure = false; //definitivamente, é booleano
 
 let counter = 0;
 let intevalId = setInterval(() =>{
