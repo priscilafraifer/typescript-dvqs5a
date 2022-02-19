@@ -50,6 +50,11 @@ for(let i=1;i<=10; i++){
 
 enum Color{Red, Green, Blue};
 let c: Color = Color.Green;
+enum ColorWithReferences {Red = 1, Green = 2, Blue = 3 };
+let c2: ColorWithReferences = ColorWithReferences.Green;
+
+//Declarando any
+
 
 
 let counter = 0;
