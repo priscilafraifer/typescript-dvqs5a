@@ -96,6 +96,7 @@ appDiv.innerHTML = `
 <h1>${title}</h1>
 <p>${paragraph}</h1>
 <div id ='counterDiv'></div>
+<button id='appButton' onclick="">Alertar</button>
 `;
 
 
