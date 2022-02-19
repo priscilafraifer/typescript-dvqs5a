@@ -1,4 +1,5 @@
 // Import stylesheets
+import { Greeter } from './greeter';
 import './style.css';
 
 //Comentando com múltiplas linhas
@@ -94,8 +95,13 @@ let intevalId = setInterval(() => {
   counterDiv.innerHTML = 'Contador: ' + counter;
 }, 1000);
 
-let title: string = 'Olá, mundo!';
-let paragraph: string = 'BlaBlaBla';
+//Utilizando classe externa
+
+let saudacao = new Greeter("Mundo");
+
+
+let title: string = "Olá, mundo!";
+let paragraph: string = "BlaBlaBla";
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
@@ -105,6 +111,8 @@ appDiv.innerHTML = `
 <div id ='counterDiv'></div>
 <hr>
 <button id='appButton' onclick="alertTsMethod()">Alertar</button>
+<hr>
+<div>${saudacao.getGreeting()}</div>
 `;
 
 //Declarando uma função para ser invocada por um evento
