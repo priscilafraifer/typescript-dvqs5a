@@ -116,8 +116,8 @@ appDiv.innerHTML = `
 `;
 
 //Declarando uma função para ser invocada por um evento
+const btn = document.getElementById("appButton");
+btn?.addEventListener("click", alertTsMethod);
 function alertTsMethod(this: HTMLElement, ev: Event){
   alert("Alertando em typescript");
 }
-const btn = document.getElementById("appButton");
-btn?.addEventListener("click", alertTsMethod);
