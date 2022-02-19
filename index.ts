@@ -42,6 +42,14 @@ for(let i=1;i<=10; i++){
   }
 }
 
+let counter = 0;
+let intevalId = setInterval(() =>{
+  counter += 1;
+  const counterDiv: HTMLElement = document.getElementById
+  ('counterDiv');
+  counterDiv.innerHTML = 'Contador: ' +counter;
+},1000);
+
 let title: string = "Olá, mundo!";
 let paragraph: string = "BlaBlaBla"
   
@@ -51,6 +59,7 @@ const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `
 <h1>${title}</h1>
 <p>${paragraph}</h1>
+<div id ='counterDiv'></div>
 `;
 
 
