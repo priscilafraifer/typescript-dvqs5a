@@ -23,9 +23,13 @@ blablabla blablabla
 //Utilizando o console
 console.log("Olá, mundo!")
 
+//Declarando arrays
+let list: number[] = [21, 2, 65, 55, 10, 98, 3, 9, 80, 42];
+
 //Utilizando laços de repetição
-for(let i=1;i<=10; i++){
-  console.log(i);
+console.log("Laço");
+for(let i=1;i<=10; i++){  
+  console.log(list[i]);
 }
 
 //Utilizando condicionais
@@ -41,6 +45,12 @@ for(let i=1;i<=10; i++){
     console.log(i);
   }
 }
+
+//Declarando tipos enumerados
+
+enum Color{Red, Green, Blue};
+let c: Color = Color.Green;
+
 
 let counter = 0;
 let intevalId = setInterval(() =>{
