@@ -97,8 +97,7 @@ let intevalId = setInterval(() => {
 
 //Utilizando classe externa
 
-let saudacao = new Greeter("Mundo");
-
+let saudacao = new Greeter();
 
 let title: string = "Olá, mundo!";
 let paragraph: string = "BlaBlaBla";
