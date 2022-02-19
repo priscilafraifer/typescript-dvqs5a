@@ -86,6 +86,7 @@ function getFullName(pessoa: { name: string; lastname: string }): string {
 let p = { name: 'Ricardo', lastname: 'Larguesa' };
 console.log(getFullName(p));
 
+
 let counter = 0;
 let intevalId = setInterval(() => {
   counter += 1;
@@ -96,6 +97,8 @@ let intevalId = setInterval(() => {
 let title: string = 'Olá, mundo!';
 let paragraph: string = 'BlaBlaBla';
 
+
+
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `
@@ -105,3 +108,10 @@ appDiv.innerHTML = `
 <hr>
 <button id='appButton' onclick="alertTsMethod()">Alertar</button>
 `;
+
+//Declarando uma função para ser invocada por um evento
+function alertTsMethod(this: HTMLElement, ev: Event){
+  alert("Alertando em typescript");
+}
+const btn = document.getElementById("appButton");
+btn?.addEventListener("click", alertTsMethod);
