@@ -9,7 +9,7 @@ de comentário*/
 const myVar1: number = 42;
 const myVar2: number = 42;
 //Declaração de variáveis
-let myVar3 = 42
+let myVar3 = 42;
 let myVar4: number = 42;
 let myVar5: string = "Olá";
 
@@ -39,11 +39,18 @@ if (myVar1 % 2 == 0){
 for(let i=1;i<=10; i++){
   if (i % 2 == 0){
     console.log(i);
+  }
 }
 
-
+let title: string = "Olá, mundo!";
+let paragraph: string = "BlaBlaBla"
   
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+appDiv.innerHTML = `
+<h1>${title}</h1>
+<p>${paragraph}</h1>
+`;
+
+
