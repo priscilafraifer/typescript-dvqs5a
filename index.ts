@@ -23,7 +23,7 @@ blablabla blablabla
 `;
 
 //Utilizando o console
-console.log('Olá, mundo!');
+console.log("Olá, mundo!");
 
 //Declarando arrays
 let list: number[] = [21, 2, 65, 55, 10, 98, 3, 9, 80, 42];
