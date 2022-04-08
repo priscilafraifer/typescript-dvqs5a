@@ -29,16 +29,16 @@ console.log("Olá, mundo!");
 let list: number[] = [21, 2, 65, 55, 10, 98, 3, 9, 80, 42];
 
 //Utilizando laços de repetição
-console.log('Laço');
+console.log("Laço");
 for (let i = 1; i <= 10; i++) {
   console.log(list[i]);
 }
 
 //Utilizando condicionais
 if (myVar1 % 2 == 0) {
-  console.log(myVar1 + ' é PAR');
+  console.log(myVar1 + "é PAR");
 } else {
-  console.log(myVar1 + ' é IMPAR');
+  console.log(myVar1 + "é IMPAR");
 }
 
 //Utilizando laços e condicionais
@@ -66,12 +66,12 @@ let c2: ColorWithReferences = ColorWithReferences.Green;
 //Declarando any
 
 let notSure: any = 42;
-notSure = 'Maybe a string instead';
+notSure = "Maybe a string instead";
 notSure = false; //definitivamente, é booleano
 
 //Declarando Void
 function aviso(): void {
-  console.log('Mensagem de alerta');
+  console.log("Mensagem de alerta");
 }
 aviso();
 
@@ -87,7 +87,6 @@ function getFullName(pessoa: { name: string; lastname: string }): string {
 }
 let p = { name: 'Ricardo', lastname: 'Larguesa' };
 console.log(getFullName(p));
-
 
 let counter = 0;
 let intevalId = setInterval(() => {
@@ -116,8 +115,8 @@ appDiv.innerHTML = `
 `;
 
 //Declarando uma função para ser invocada por um evento
-const btn = document.getElementById("appButton");
-btn?.addEventListener("click", alertTsMethod);
-function alertTsMethod(this: HTMLElement, ev: Event){
-  alert("Alertando em typescript");
+const btn = document.getElementById('appButton');
+btn?.addEventListener('click', alertTsMethod);
+function alertTsMethod(this: HTMLElement, ev: Event) {
+  alert('Alertando em typescript');
 }
